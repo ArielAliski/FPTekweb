@@ -78,7 +78,7 @@ Ariel - Mengerjakan footer website untuk laman home <br>
 Ariel dan Krishna - Mengisi konten home <br>
 
 ## 30 Juni 2021
-Axellino - Membuat ulang kembali landing page <br>
+Axellino - Membuat ulang kembali landing page agar sesuai dengan estetika glassmorphism <br>
 Ariel - Menyatukan dan melakukan linking semua page website <br>
 
 ## 2 Juli 2021
