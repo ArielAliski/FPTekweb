@@ -76,6 +76,7 @@ Krishna - Mengerjakan bagian fashion <br>
 ## 27 Juni 2021
 Ariel - Mengerjakan footer website untuk laman home <br>
 Ariel dan Krishna - Mengisi konten home <br>
+Axellino - Mengerjakan sistematika login website <br>
 
 ## 30 Juni 2021
 Axellino - Membuat ulang kembali landing page agar sesuai dengan estetika glassmorphism <br>
