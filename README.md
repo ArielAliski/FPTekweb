@@ -7,8 +7,8 @@
 Adapun anggota dari pengerjaan projek ini adalah sebagai berikut :
 1. Ariel Daffansyah Aliski (Ketua)
 2. Axellino Anggoro Armandito
-3. Danish Poetra Budi
-4. Kevin Aktuaria
+3. Danish Putra Dandi
+4. Kevin Oktoaria
 5. Made Gde Krishna Mbawuante
 
 ## 9 Juni 2021
