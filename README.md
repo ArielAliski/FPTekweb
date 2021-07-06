@@ -9,7 +9,7 @@ Adapun anggota dari pengerjaan projek ini adalah sebagai berikut :
 2. Axellino Anggoro Armandito
 3. Danish Putra Dandi
 4. Kevin Oktoaria
-5. Made Gde Krishna Mbawuante
+5. Made Gde Krisna
 
 ## 9 Juni 2021
 
