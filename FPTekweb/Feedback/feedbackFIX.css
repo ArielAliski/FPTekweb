@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prodcut Sans', sans-serif;
+}
+
+/*merapikan web*/
+body{
+    overflow: hidden;
+}
+
+/*container form*/
+form section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    width: 100%;
+    background: linear-gradient(135deg,#0e0e0e 50%,#1d1d1d);
+}
+
+/*lingkaran atas*/
+form section:before{
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-image: linear-gradient( 109.6deg,  rgba(48,207,208,1) 11.2%, rgba(51,8,103,1) 92.5% );
+    border-radius: 50%;
+    transform: translate(-420px,-180px);
+}
+
+/*lingkaran bawah*/
+form section:after{
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-image: linear-gradient( 179.4deg,  rgba(253,240,233,1) 2.2%, rgba(255,194,203,1) 96.2% );
+    border-radius: 50%;
+    transform: translate(400px,180px);
+}
+
+/*efek glassmorph*/
+.container{
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    max-width: 1000px;
+    padding: 50px;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-right: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter:blur(25px);           
+}
+
+
+/*efek pada bagian kanan form*/
+.container:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    left: -40%;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+    pointer-events: none;
+    transform: skewX(-15deg);
+}
+
+
+/*header feedback form*/
+.container h2{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/*meletakkan baris ke samping*/
+.container .row100{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+
+/*merapikan dan memberi jarak antar tabel*/
+.container .row100 .col{
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 20px;
+}
+
+/*kolom input form*/
+.container .row100 .col .inputBox{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: white;
+}
+
+/*untuk teks pada kolom input*/
+.container .row100 .col .inputBox input, 
+.container .row100 .col .inputBox textarea{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 0 10px;
+    z-index: 1;
+    color: black;
+} 
+
+/*Untuk animasi ke atas(name email dll)*/
+.container .row100 .col .inputBox .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.container .row100 .col .inputBox input:focus + .text, 
+.container .row100 .col .inputBox input:valid + .text,
+.container .row100 .col .inputBox textarea:focus + .text, 
+.container .row100 .col .inputBox textarea:valid + .text
+{
+    top: -35px;
+    left: -10px;
+}
+
+/*warna putih input form(kecuali comment)*/
+.container .row100 .col .inputBox .line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transition: 0.3s;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+/*kotak putih pada input*/
+.container .row100 .col .inputBox input:focus ~ .line, 
+.container .row100 .col .inputBox input:valid ~ .line{
+    height: 100%;
+}
+
+
+.container .row100 .col .inputBox .textarea{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+
+
+/*kotak putih tabel komen*/
+.container .row100 .col .inputBox textarea:focus ~ .line, 
+.container .row100 .col .inputBox textarea:valid ~ .line{
+    height: 100%;
+}
+
+/*design button*/
+.container .row100 .col input[type="submit"]{
+    font-family: 'Product Sans', sans-serif;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none;
+    color: #222233;
+    background: #aaccff;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+/*agar responsif*/
+@media (max-width:768px){
+    form section::before{
+        transform: translate(-200px,-180px);
+    }
+    form section::after{
+        transform: translate(220px,180px);
+    }
+    .container{
+        padding: 20px;
+    }
+    .container{
+        h2{
+            font-size: 28px;
+        }
+    }
+}

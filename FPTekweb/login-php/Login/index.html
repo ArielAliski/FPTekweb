@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing page FP</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="glass">
+        <img src="image/bgGlassmorph.jpg" alt="" id="bg">
+        <img src="image/moon.png" alt="" id="moon">
+        <img src="image/bawah.png" alt="" id="road">
+        <h2 id="text">Explore</h2>
+    </section>
+    
+
+
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function() {
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            text.style.top = value * 1 + 'px';
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+    .mainkedua {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        font-family: "Product Sans";
+        list-style: none;
+        box-sizing: border-box;
+        background-image: url("foto/background.png");
+    }
+    
+    nav .nav-links ul {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    nav .nav-links ul li {
+        padding: 0 4px;
+        list-style: none;
+    }
+    
+    nav .nav-links ul li img {
+        transform: scale(0.45);
+    }
+    /* SWIPER */
+    
+    #sectionthree {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+    
+    .link-nama {
+        width: 95%;
+        height: 5vh;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+    
+    .link-nama .swiper-pagination-bullet {
+        opacity: 0.2;
+        outline: none;
+    }
+    
+    .link-nama .swiper-pagination-bullet-active {
+        color: rgb(0, 255, 242);
+        opacity: 1;
+    }
+    
+    .swiper-pagination-clickable .swiper-pagination-bullet {
+        background: transparent;
+    }
+    
+    .swiper-container {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 50px 0;
+    }
+    
+    .swiper-wrapper {
+        transition-delay: 0.5s;
+    }
+    
+    .swiper-slide {
+        height: 400px !important;
+        width: 90% !important;
+        background: transparent;
+    }
+    
+    .swiper-slide:nth-child(1) .slide-img {
+        background-image: url("foto/aril.png");
+    }
+    
+    .swiper-slide:nth-child(2) .slide-img {
+        background-image: url("foto/dpd.png");
+    }
+    
+    .swiper-slide:nth-child(3) .slide-img {
+        background-image: url("foto/axel.png");
+    }
+    
+    .swiper-slide:nth-child(4) .slide-img {
+        background-image: url("foto/kevin.png");
+    }
+    
+    .swiper-slide:nth-child(5) .slide-img {
+        background-image: url("foto/krisna.png");
+    }
+    
+    .slide-img {
+        background-position: "center";
+        background-repeat: no-repeat !important;
+        background-size: contain;
+        width: 30%;
+        height: 120%;
+    }
+    
+    .slide-number {
+        position: absolute;
+        top: -30px;
+        left: 30%;
+        width: 100%;
+        height: 120px;
+        overflow: unset;
+    }
+    
+    .slide-number p {
+        font-size: 40px;
+        font-family: "AlphaCentauri" !important;
+        color: rgb(0, 225, 255);
+        position: relative;
+    }
+    
+    .slide-number p span {
+        position: absolute;
+    }
+    
+    .slide-detail {
+        position: absolute;
+        top: 100px;
+        left: 30%;
+        z-index: 10;
+        width: 70%;
+        height: 400px;
+        overflow: hidden;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .slide-detail p {
+        font-size: 19px;
+        color: rgb(0, 238, 255);
+        position: relative;
+        opacity: 0.8;
+        line-height: 30px;
+    }
+    
+    .slide-detail p span {
+        position: absolute;
+    }
+    
+    .slide-detail-facts {
+        /*NRP dan MOTTO*/
+        position: absolute;
+        top: 130px;
+        left: 31%;
+        z-index: 10;
+        width: 70%;
+        height: 400px;
+        overflow: hidden;
+        color: rgb(0, 238, 255);
+        font-size: 19px;
+    }
+    
+    .slide-detail-facts div {
+        display: flex;
+        position: relative;
+    }
+    
+    .slide-detail-facts div h5 {
+        margin-right: 20px;
+    }
+    
+    .slide-text {
+        position: absolute;
+        top: -150px;
+        left: 22%;
+        z-index: 9;
+        width: 200px;
+        height: 400px;
+        overflow: hidden;
+        opacity: 0.3 !important;
+    }
+    
+    .slide-text h4 {
+        /* angka pada nama */
+        color: rgb(0, 255, 255);
+        font-size: 100px;
+        position: relative;
+    }
+    
+    .slide-text h4 span {
+        position: absolute;
+    }
+    /* ---------  */
+    
+    .bubbles {
+        position: absolute;
+        display: flex;
+        bottom: -100px;
+        width: 100%;
+        justify-content: space-around;
+        background-image: url("foto/earth.png");
+    }
+    
+    .bubbles span {
+        height: 60px;
+        width: 60px;
+        border-radius: 100%;
+        background: rgba(0, 132, 255, 0.1);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(1px);
+        animation: move 10s linear infinite;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    @keyframes move {
+        100% {
+            transform: translateY(-100vh);
+        }
+    }
+    
+    .bubbles span.one {
+        animation-delay: 2.2s;
+        transform: scale(2.15);
+    }
+    
+    .bubbles span.two {
+        animation-delay: 3.5s;
+        transform: scale(1.55);
+    }
+    
+    .bubbles span.three {
+        animation-delay: 0.2s;
+        transform: scale(0.35);
+    }
+    
+    .bubbles span.five {
+        animation-delay: 7s;
+        transform: scale(0.5);
+    }
+    
+    .bubbles span.six {
+        animation-delay: 4s;
+        transform: scale(2.5);
+    }
+    
+    .bubbles span.seven {
+        animation-delay: 3s;
+        transform: scale(1.5);
+    }
+    
+    .bubbles span:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 60px;
+        width: 40%;
+        transform: skew(45deg) translateX(150px);
+        background: rgba(255, 255, 255, 0.15);
+        animation: mirror 3s linear infinite;
+    }
+    
+    @keyframes mirror {
+        100% {
+            transform: translateX(-450px);
+        }
+    }
+    
+    .bubbles span.one:before {
+        animation-delay: 1.5s;
+    }
+    
+    .bubbles span.two:before {
+        animation-delay: 3.5s;
+    }
+    
+    .bubbles span.three:before {
+        animation-delay: 2.5s;
+    }
+    
+    .bubbles span.five:before {
+        animation-delay: 4.5s;
+    }
+    
+    .bubbles span.six:before {
+        animation-delay: 0.5s;
+    }
+    
+    .bubbles span.seven:before {
+        animation-delay: 6s;
+    }
